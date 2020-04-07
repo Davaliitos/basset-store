@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Gotu&display=swap');
+
 body{
     font-family: 'Gotu', sans-serif;
     padding: 20px 60px;
@@ -7,4 +8,8 @@ body{
 a{
     text-decoration: none;
     color: black;
+}
+
+*{
+    box-sizing: border-box;
 }
