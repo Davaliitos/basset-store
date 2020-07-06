@@ -10,13 +10,18 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm install
+RUN cd client && npm install
+RUN cd ..
 
 # Copy app source
 COPY . .
 
 # Define the Docker image's behavior at runtime
-CMD ["npm", "build"]
+RUN npm build
 
 RUN cd ..
 RUN npm install -g serve
-RUN serve -s build
+
+CMD ["serve","build"]
+
+]
