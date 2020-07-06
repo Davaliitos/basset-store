@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Define the Docker image's behavior at runtime
-RUN npm build
+RUN npm run build
 
 RUN cd ..
 RUN npm install -g serve
