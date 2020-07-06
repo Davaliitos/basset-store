@@ -18,5 +18,6 @@ COPY . .
 RUN npm run build
 
 RUN npm install -g serve
+RUN /client
 
 CMD ["serve","build"]
