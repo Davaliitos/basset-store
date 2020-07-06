@@ -10,8 +10,6 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm install
-RUN cd client && npm install
-RUN cd ..
 
 # Copy app source
 COPY . .
